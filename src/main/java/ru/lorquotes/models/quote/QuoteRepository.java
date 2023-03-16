@@ -1,4 +1,4 @@
-package ru.lorquotes.model.quote;
+package ru.lorquotes.models.quote;
 
 import org.springframework.data.mongodb.repository.MongoRepository;
 

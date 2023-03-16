@@ -1,4 +1,4 @@
-package ru.lorquotes.model.quote;
+package ru.lorquotes.models.quote;
 
 import lombok.*;
 import org.springframework.data.annotation.Id;
