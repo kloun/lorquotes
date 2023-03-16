@@ -1,7 +1,6 @@
 package ru.lorquotes.model.quote;
 
-import lombok.Builder;
-import lombok.Getter;
+import lombok.*;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.Field;
@@ -9,7 +8,10 @@ import org.springframework.data.mongodb.core.mapping.Field;
 import java.time.LocalDateTime;
 
 @Getter
-@Builder
+@Builder(toBuilder = true)
+@ToString
+@NoArgsConstructor(access = AccessLevel.PROTECTED)
+@AllArgsConstructor(access = AccessLevel.PRIVATE)
 @Document(collection = "quotes")
 public class Quote {
     @Id
